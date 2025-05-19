@@ -177,7 +177,10 @@ body {
 .heading-tertiary {
   font-family: var(--main-font);
   font-weight: bold;
-  color: #58aba3;
+  background: linear-gradient(45deg, #58aba3, #f2876d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
   letter-spacing: -0.5px;
   font-size: 2.4rem;
 }
@@ -559,3 +562,11 @@ strong {
 }
 
 /****************************** End Snow *************************/
+.img-fluid {
+  border-radius: 13px;
+}
+.our__clients {
+  background: #fff !important;}
+    .section-wordpress .container {
+      background-color: #fff !important;
+    }
