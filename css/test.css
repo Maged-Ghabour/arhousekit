@@ -1,0 +1,61 @@
+/************************** Slider ********************/
+/* Start Edit Slider */
+.s-block.s-block--photos-slider {
+  margin-top: 0;
+  padding: 0;
+}
+salla-slider.photos-slider .swiper-slide {
+  width: 100%;
+}
+.carousel-slider .s-slider-block__title-nav {
+  display: none;
+}
+salla-slider.photos-slider .swiper:where([dir="rtl"], [dir="rtl"] *) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.s-block.s-block--photos-slider img {
+  border-radius: 0;
+}
+/*End Edit Slider */
+/******************************************************/
+
+/************************* Features One *****************/
+:nth-child(1 of .s-block.s-block--banners) .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+:nth-child(1 of .s-block.s-block--banners).two-row .banner-entry:first-child {
+  grid-row: span 1 / span 1;
+}
+
+:nth-child(1 of .s-block.s-block--banners) .banner-entry {
+  background: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  :nth-child(1 of .s-block.s-block--banners) .banner-entry {
+    height: 70px;
+  }
+}
+
+/************************* Features Two *****************/
+:nth-child(2 of .s-block.s-block--banners) .grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+:nth-child(2 of .s-block.s-block--banners).two-row .banner-entry:first-child {
+  grid-row: span 1 / span 1;
+}
+
+:nth-child(2 of .s-block.s-block--banners) .banner-entry {
+  background: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  :nth-child(2 of .s-block.s-block--banners) .banner-entry {
+    height: 70px;
+  }
+}
