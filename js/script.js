@@ -176,3 +176,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("visibilitychange", handleVisibilityChange);
 });
+
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Show button when user scrolls down 300px
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+});
+
+// Smooth scroll to top when button is clicked
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
